@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <!-- animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <!-- CSS -->
+  <!-- <link rel="stylesheet" href="./css/sytel.css"> -->
+  <link rel="stylesheet" href="./index.css" />
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/d0b6273e6e.js" crossorigin="anonymous"></script>
+  <script src="./index.js" defer></script>
+  <script src="../../tok.js"></script>
+  <title>상품 정보</title>
+</head>
+
+<body>
+  <div class="contrainer">
+    <!-- navbar -->
+    <header id="header">
+      <div class="main_logo">
+        <a href="#">
+          <img src="../image/team_logo.png" alt="" />
+        </a>
+      </div>
+      <ul class="nav_menu">
+        <li class="nav_menu_item"><a href="../../index.html">HOME</a></li>
+        <li class="nav_menu_item">
+          <a href="../Aboutus/index.html">ABOUT</a>
+        </li>
+        <li class="nav_menu_item">
+          <a href="../Itemmain/index.html">PRODUCT</a>
+        </li>
+        <li class="nav_menu_item">
+          <a href="../mypage/mypage.html">MyPage</a>
+        </li>
+        <li class="nav_menu_item">
+          <a href="../cs_servicepage/index.html">C/S</a>
+        </li>
+      </ul>
+      <div class="nav_search">
+        <form class="search_form"></form>
+        <input class="search_bar" type="text" />
+        <button type="submit"></button>
+        <button class="search_btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <!-- Toggle button -->
+      <button class="navbar__toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+
+    <!-- HOME Image-->
+    <section id="home">
+      <div class="home_img">
+        <img src="image/temp_main_img_tonedown.jpg" alt="" />
+      </div>
+    </section>
+
+    <!-- main 시작 -->
+    <main>
+      <div class="card-wrapper">
+        <div class="card">
+          <!-- card left -->
+          <div class="product-imgs">
+            <div>
+              <div class="img-perfume">
+                <img src="../image/pexels-karolina-grabowska-8361484.jpg" alt="perfume image" />
+              </div>
+            </div>
+            <div class="img-select">
+              <div class="img-item">
+                <a href="#">
+                  <img src="../image/pexels-karolina-grabowska-8361489.jpg" alt="perfume image" />
+                </a>
+              </div>
+              <div class="img-item">
+                <a href="#">
+                  <img src="../image/pexels-karolina-grabowska-8361538.jpg" alt="perfume image" />
+                </a>
+              </div>
+              <div class="img-item">
+                <a href="#">
+                  <img src="./image/number3.png" alt="perfume image" />
+                </a>
+              </div>
+              <div class="img-item">
+                <a href="#">
+                  <img src="./image/number6.jpg" alt="perfume image" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- card right -->
+          <div class="product-content">
+            <h1 class="product-title">PRIMAVERA</h1>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <span>4.7(21)</span>
+            </div>
+
+            <div class="product-price">
+              <p class="last-price"><span>50000</span></p>
+
+            </div>
+
+            <div class="product-detail">
+              <h2>상품 세부 정보:</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Illo<br />
+                eveniet veniam tempora fuga tenetur placeat sapiente<br />
+                architecto illum soluta consequuntur, aspernatur quidem at<br />
+                sequi ipsa!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+                Consequatur, perferendis eius. Dignissimos, labore suscipit.
+                Unde.
+              </p>
+              <ul class="item__detail__info">
+                <li id="aroma">향기 : <span>Musky</span></li>
+                <li>카테고리 : <span>향수</span></li>
+                <li>배송지역 : <span>전국</span></li>
+                <li>배송비 : <span>4,000원</span></li>
+              </ul>
+            </div>
+
+            <div class="purchase-info">
+              <input id="productValue" type="number" min="0" value="1">
+              <button id="btn_cart" type="button" class="btn">
+                장바구니 <i class="fas fa-shopping-cart"></i>
+              </button>
+              <button type="button" class="btn">구매</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="product_info" id="info">
+        <div class="product_info_bigimg">
+          <img src="./image/iteminfo_bigmimg.jpg" />
+        </div>
+
+        <h3 class="product-review">상품 후기</h3>
+        <div>
+          <div class="review_Ul_box">
+            <ul>
+              <li class="review_Ul_box_li">전체</li>
+              <li class="review_Ul_box_li">포토</li>
+              <li class="review_Ul_box_li">매장</li>
+            </ul>
+          </div>
+          <table class="review_table reviewchild">
+            <caption>
+              상품후기 목록
+            </caption>
+            <thead>
+              <tr>
+                <th>평점</th>
+                <th>내용</th>
+                <th>작성일자</th>
+                <th>작성자</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </td>
+                <td>냄새가 너무 좋습니다 ... 금방 다 쓸것 같네요</td>
+                <td>2023/2/26</td>
+                <td>백XX</td>
+              </tr>
+              <tr>
+                <td>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </td>
+                <td>지금까지 이런 향수는 없었다.나라가 허락한 유일한 마약</td>
+                <td>2023/2/10</td>
+                <td>연XX</td>
+              </tr>
+              <tr>
+                <td>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </td>
+                <td>친구들이 이제 냄새난다고 안놀립니다 감사합니다</td>
+                <td>2023/1/11</td>
+                <td>안XX</td>
+              </tr>
+              <tr>
+                <td>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </td>
+                <td>
+                  살까말까할땐 사라. 구매고민하시는분들 저믿고 구매하셔도
+                  좋습니다
+                </td>
+                <td>2022/12/12</td>
+                <td>정XX</td>
+              </tr>
+            </tbody>
+            <tfoot></tfoot>
+          </table>
+          <div class="review_photo reviewchild displaynone">
+            <span>등록된 상품 후기 사진이 아직 없습니다.</span>
+          </div>
+          <div class="reviewsection_map reviewchild displaynone">
+            <img src="./image/map_img.jpg" />
+          </div>
+        </div>
+        <div class="qnacontainer1" id="qna">
+          <div class="qnachild_wrapper">
+            <div class="qnachild1">
+              <b>상품 Q&A</b>
+              <p>
+                -상품에 대해 궁금한 점을 남겨주세요.<br />
+                -문의 답변은 마이페이지>상품Q&A에서 확인하실 수 있습니다.<br />
+                -공개된 공간이므로 전화번호,메일 주소 등 고객님의 소중한
+                개인정보는 절대 남기지 말아주세요.
+              </p>
+            </div>
+            <div class="qnachild2">문의하기</div>
+          </div>
+          <table class="qnatable">
+            <tr>
+              <th></th>
+              <th colspan="">문의/답변</th>
+              <th></th>
+              <th>작성자</th>
+              <th>작성일</th>
+            </tr>
+            <tr>
+              <td colspan="5">등록된 Q&A가 없습니다</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="footer_about">
+        <div class="footer_about_anker">
+          <h3>ATEAM</h3>
+          <a href="subPage/Aboutus/index.html">About</a>
+          <a href="#">Guide</a>
+          <a href="#">Agreement</a>
+          <a href="#">privacy policy</a>
+        </div>
+        <div>
+          <h3>Banking Info</h3>
+          <p>국민 111111-11-111111</p>
+          <p>신한 11-11111-111</p>
+          <p>예금주 : 연아람</p>
+        </div>
+      </div>
+      <div class="footer_information">
+        <h3>Shop Information</h3>
+        <p>AM 10:00 - PM 6:00, 주말 밑 공휴일은 휴무입니다</p>
+        <p>
+          상호 ateam, 대표 연아람<br />
+          캘리포니아 쿠퍼티노<br />
+          사업자 등록 번호 111-11-11111<br />
+          통신판매업번호 2023-몰루-0001호<br />
+          개인정보관리책임자 없음<br />
+          이메일 admin@xxx.com<br />
+        </p>
+      </div>
+      <div class="footer_instagram">
+        <h3>instagram by@ateam</h3>
+        <ul class="footer_instagram_img">
+          <li>
+            <img src="../image/pexels-mathilde-langevin-10897665.jpg" alt="" />
+          </li>
+          <li>
+            <img src="../image/pexels-karolina-grabowska-8361484.jpg" alt="" />
+          </li>
+          <li>
+            <img src="../image/pexels-abdulrhman-alkady-6947682.jpg" alt="" />
+          </li>
+          <li>
+            <img src="../image/pexels-animesh-srivastava-11171653.jpg" alt="" />
+          </li>
+          <li>
+            <img src="../image/pexels-animesh-srivastava-7896916.jpg" alt="" />
+          </li>
+          <li>
+            <img src="../image/pexels-yusuf-arslan-3640668.jpg" alt="" />
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- aside -->
+    <aside id="aside">
+      <ul>
+        <li>
+          <div class="bubble">장바구니</div>
+          <button class="aside_btn">
+            <a href="../cart/cart.html">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </a>
+          </button>
+        </li>
+        <li>
+          <div class="bubble">즐겨찾기</div>
+          <button class="aside_btn">
+            <a href="">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </button>
+        </li>
+        <li>
+          <div class="bubble">로그인</div>
+          <button class="aside_btn">
+            <a href="../login/login.html">
+              <i class="fa-regular fa-user"></i>
+            </a>
+          </button>
+        </li>
+        <li>
+          <button class="aside_btn up">
+            <span>Top</span>
+          </button>
+        </li>
+      </ul>
+    </aside>
+  </div>
+  <script>
+    (function () {
+      var w = window;
+      if (w.ChannelIO) {
+        return w.console.error('ChannelIO script included twice.');
+      }
+      var ch = function () {
+        ch.c(arguments);
+      };
+      ch.q = [];
+      ch.c = function (args) {
+        ch.q.push(args);
+      };
+      w.ChannelIO = ch;
+      function l() {
+        if (w.ChannelIOInitialized) {
+          return;
+        }
+        w.ChannelIOInitialized = true;
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+        var x = document.getElementsByTagName('script')[0];
+        if (x.parentNode) {
+          x.parentNode.insertBefore(s, x);
+        }
+      }
+      if (document.readyState === 'complete') {
+        l();
+      } else {
+        w.addEventListener('DOMContentLoaded', l);
+        w.addEventListener('load', l);
+      }
+    })();
+
+    ChannelIO('boot', {
+      pluginKey: 'd1f395e5-209b-4581-826d-95135e08984b',
+    });
+  </script>
+</body>
+
+</html>

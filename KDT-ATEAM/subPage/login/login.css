@@ -1,0 +1,508 @@
+:root {
+    /* color */
+    --color-white: #ffffff;
+    --color-light-white: #eeeeee;
+    --color-dark-white: #bdbdbd;
+    --color-pink: #fe918d;
+    --color-dark-pink: #e19cb0;
+    --color-black: #4d4d4d;
+    --color-dark-grey: #4d4d4d;
+    --color-grey: #616161;
+    --clolor-light-grey: #7c7979;
+    --color-blue: #73aace;
+    --color-yellow: #fff7d1;
+    --color-orange: #feb546;
+    --color-black: #000000;
+  
+    /* font-size */
+    /*48*/
+    --font-large: 3rem;
+    /*28*/
+    --font-medium: 1.75rem;
+    /*18*/
+    --font-regular: 1.125rem;
+    /*16*/
+    --font-small: 1rem;
+    /*14*/
+    --font-micro: 0.075rem;
+  
+    /* font-weight */
+    --weight-bold: 700;
+    --weight-semi-bold: 600;
+    --weight-regular: 400;
+  
+    /* animation */
+    ---animation-duration-short: 200ms;
+    --animation-duration: 300ms;
+    --animation-duration-long: 400ms;
+  
+    /* radious */
+    --regular-border-radius: 15px;
+    --small-size-border-radius: 4px;
+  
+    /* padding */
+    --padding-side: 0px 50px;
+  }
+  
+  /* Universal tags */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Open sans', sans-serif;
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:link,
+  a:visited {
+    color: black;
+  }
+  
+  ul {
+    padding-left: 0;
+  }
+  
+  li {
+    list-style: none;
+    /* cursor: pointer; */
+  }
+  
+  button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 0;
+  }
+  
+  img {
+    width: 100%;
+  }
+
+  .buttonstyle {
+    background-color: black;
+    color: var(--color-white);
+  }
+  
+  /* Typography */
+  h1 {
+    font-size: var(--font-large);
+  }
+  
+  h2 {
+    font-size: var(--font-medium);
+  }
+  
+  h3 {
+    font-size: var(--font-small);
+    margin: 0 0 10px 0;
+  }
+  
+  p {
+    font-size: var(--font-small);
+  }
+  
+  /* navbar */
+  #header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px;
+  }
+  
+  .main_logo {
+    min-width: 3.125rem;
+  }
+  
+  .nav_menu {
+    display: flex;
+    justify-content: center;
+    font-size: var(--font-regular);
+    padding-right: 30px;
+  }
+  
+  .nav_menu_item {
+    margin: 0;
+    padding: 8px 20px;
+    transition: all var(--animation-duration) ease-in;
+  }
+  
+  /* .nav_menu_item:after {
+      content: '';
+      width: 100%;
+      border-bottom: 1px solid transparent;
+      border-color: var(--color-black);
+      display: none;
+    } */
+  
+  .nav_menu_item:hover {
+    transform: scale(1.2);
+  }
+  
+  .nav_search {
+  }
+  
+  .search_bar {
+    width: 7.5rem;
+    font-size: var(--font-regular);
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    transition: all var(--animation-duration) ease-in;
+    transform: scaleX(0);
+    transform-origin: right;
+    visibility: hidden;
+  }
+  
+  .visible {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  
+  .search_btn {
+    font-size: var(--font-small);
+  }
+  
+  /* responsive nav */
+  .navbar__toggle-btn {
+    position: absolute;
+    top: 24px;
+    right: 32px;
+    font-size: 24px;
+    display: none;
+  }
+  
+  /* HOME Image */
+  #home {
+    margin-bottom: 30px;
+  }
+  
+  /* footer */
+  #footer {
+    background-color: #d2d2d2;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 100px;
+    text-align: left;
+  }
+  
+  .footer_about_anker {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 20px;
+  }
+  
+  .footer_about_anker a {
+    padding: 5px 0;
+    transition: all var(--animation-duration) ease-in-out;
+  }
+  
+  .footer_about p {
+    padding: 5px 0;
+  }
+  
+  .footer_about_anker a:hover {
+    transform: scale(1.1);
+  }
+  
+  .footer_information p {
+    padding: 20px 0;
+  }
+  
+  .footer_information p:last-child {
+    font-size: var(--font-regular);
+  }
+  
+  .footer_instagram h3 {
+    font-size: var(--font-regular);
+    padding-bottom: 10px;
+  }
+  
+  .footer_instagram_img {
+    display: grid;
+    grid-template-rows: repeat(2, 100px);
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+  }
+  
+  /* aside */
+  #aside {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 50px;
+    font-size: var(--font-medium);
+    background-color: #dcdcdc;
+    opacity: 0.7;
+    z-index: 1;
+    border-radius: 10px 0 0 10px;
+  }
+  
+  #aside ul {
+    margin: 0;
+  }
+  
+  #aside li {
+    position: relative;
+    margin: 10px 0px;
+    pointer-events: none;
+  }
+  
+  .aside_btn,
+  .arrow_up {
+    transition: all var(---animation-duration-short) ease-in;
+    font-size: var(--font-regular);
+    pointer-events: all;
+  }
+  
+  .aside_btn:hover {
+    transform: scale(1.2);
+  }
+  
+  .up:hover {
+    transform: scale(1.1);
+  }
+  
+  .bubble {
+    position: absolute;
+    transform: translateX(-120%);
+    top: 10px;
+    width: 90px;
+    background: #dcdcdc;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-size: var(--font-small);
+    padding: 5px 0px;
+    opacity: 1;
+    display: none;
+  }
+  
+  .bubble:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 10px 0 10px 20px;
+    border-color: transparent #dcdcdc;
+    display: block;
+  
+    z-index: 1;
+    top: 20%;
+    right: -14px;
+  }
+  
+  #aside li:hover .bubble {
+    display: block;
+  }
+  
+  #aside li:nth-child(4) {
+    width: 35px;
+    border-top: 1px solid #4d4d4d;
+    margin: 10px auto;
+  }
+
+/*====== main page ======*/
+
+/* main */
+
+.main_container div>a {
+    text-decoration: none;
+    display: block;
+}
+
+.login_container {
+    width: 500px;
+    height: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    outline: none;
+}
+
+/* 로그인 로고 */
+.login {
+    width: 140px;
+    margin: 30px auto;
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: var(--font-large);
+    border-bottom: 2px solid;
+}
+
+/* 회원 비회원버튼 */
+.members {
+    display: flex;
+}
+
+.members button {
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    opacity: .5;
+    color: var(--color-white);
+}
+
+.members .visible {
+    opacity: 1;
+}
+
+/* 멤버박스 */
+.member_box {
+    display: none;
+}
+
+/* id칸 */
+.login_id {
+    width:300px;
+    height: 50px;
+    margin-top: 50px;
+}
+
+.member_id,
+.non_member_id {
+    width: 300px;
+    height: 35px;
+    border: none;
+    border-bottom: 1.5px solid #000000;
+}
+
+/* psw칸 */
+.login_pw {
+    width:300px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.member_pw,
+.non_member_pw {
+    width: 300px;
+    height: 35px;
+    border: none;
+    border-bottom: 1.5px solid #000000;
+}
+
+/* 비회원박스 */
+
+.non_member_box {
+    display: none;
+}
+
+/* 비회원 id칸 */
+.non_member_login_id {
+    width:300px;
+    height: 50px;
+    margin-top: 50px;
+
+}
+
+/* 비회원 psw칸 */
+.non_member_login_pw {
+    width:300px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+/* 회원 비회원 show */
+.show {
+    display: block;
+}
+
+
+/* 로그인엔터 */
+.login_login {
+    width: 100%;
+    height: 45px;
+    margin: 0 auto;
+    border-radius: 3px;
+    background-color: black;
+    font-size: 17px;
+    line-height: 45px;
+    text-align: center;
+    color: white;
+}
+
+.login_enter>a {
+    color: var(--color-white);
+}
+
+/* 찾기,회원가입 */
+.login_middle {
+    width: 150px;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+/* 찾기 */
+.find {
+    float: left;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #000000;
+}
+
+/* 회원가입 */
+.join {
+    float: right;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #000000;
+}
+
+/* 다른로그인 이미지 */
+.login_container img {
+    width: 35px;
+    margin: 40px 5px;
+}
+
+
+/* responsive web */
+
+@media screen and (max-width: 768px) {
+    :root {
+    /* font-size */
+    --font-large: 1.875rem;
+    --font-mdeium: 1.125rem;
+    --font-regular: 1rem;
+    --font-small: 0.875rem;
+    --font-micro: 0.75rem;
+    }
+
+    .navbar__toggle-btn {
+    display: block;
+    }
+
+    .nav_menu {
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    background-color: var(--color-white);
+    opacity: 0.9;
+    top: 95px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 5px;
+    }
+
+    .nav_search {
+    display: none;
+    }
+
+    /* .best_seller_items,
+    .new_arrival_items {
+    } */
+}  

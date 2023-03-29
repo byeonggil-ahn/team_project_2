@@ -1,0 +1,146 @@
+:root {
+    /* color */
+    --color-white: #ffffff;
+    --color-light-white: #eeeeee;
+    --color-dark-white: #bdbdbd;
+    --color-pink: #fe918d;
+    --color-dark-pink: #e19cb0;
+    --color-black: #4d4d4d;
+    --color-dark-grey: #4d4d4d;
+    --color-grey: #616161;
+    --clolor-light-grey: #7c7979;
+    --color-blue: #73aace;
+    --color-yellow: #fff7d1;
+    --color-orange: #feb546;
+    --color-black: #000000;
+
+    /* font-size */
+    /*48*/
+    --font-large: 3rem;
+    /*28*/
+    --font-medium: 1.75rem;
+    /*18*/
+    --font-regular: 1.125rem;
+    /*16*/
+    --font-small: 1rem;
+    /*14*/
+    --font-micro: 0.075rem;
+
+    /* font-weight */
+    --weight-bold: 700;
+    --weight-semi-bold: 600;
+    --weight-regular: 400;
+
+    /* animation */
+    ---animation-duration-short: 200ms;
+    --animation-duration: 300ms;
+    --animation-duration-long: 400ms;
+
+    /* radious */
+    --regular-border-radius: 15px;
+    --small-size-border-radius: 4px;
+
+    /* padding */
+    --padding-side: 0px 50px;
+}
+
+/* Universal tags */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link,
+a:visited {
+    color: black;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+    /* cursor: pointer; */
+}
+
+button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+/* Typography */
+h1 {
+    font-size: var(--font-large);
+}
+
+h2 {
+    font-size: var(--font-medium);
+}
+
+h3 {
+    font-size: var(--font-small);
+    margin: 0 0 10px 0;
+}
+
+p {
+    font-size: var(--font-small);
+}
+
+/* 전체 컨테이너 */
+.container{
+    width: 80%;
+    margin: 100px auto;
+}
+
+hr {
+    margin: 60px 0;
+}
+
+.logo_container {
+    text-align: center;
+}
+
+
+/* 약관 부분 전체 컨테이너 */
+.main_container{
+    border: 1px solid;
+}
+
+/* 약관 부분 컨테이너 */
+
+.term_name {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.term_list{
+    padding: 20px 30px;
+}
+
+.term_list p{
+    white-space: pre-line;
+    word-break: keep-all;
+    text-align: justify;
+}
+
+.term_list>h2{
+    padding-top: 30px;
+}

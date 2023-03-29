@@ -1,0 +1,12 @@
+body {
+    /* background: #ffffff;
+    background: -webkit-linear-gradient(to right, #d2d2d2, #d5d5d5);
+    background: linear-gradient(to right, #d2d2d2, #d2d2d2); */
+    min-height: 100vh;
+  }
+
+@media (min-width: 1025px) {
+    .h-custom {
+    height: 100vh !important;
+    }
+}
